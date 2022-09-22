@@ -1,0 +1,37 @@
+.collection {
+  background-image: url(../../imgs/collection-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: 0;
+  background-position-y: -28px;
+  margin-bottom: 190px;
+  &__list {
+    @include flex;
+    justify-content: space-between;
+    padding: 0 72px;
+  }
+}
+.collections {
+  &__item {
+    max-width: 255px;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+    margin-top: 126px;
+  }
+  &__img {
+    margin-bottom: 71px;
+  }
+  &__title {
+    font-family: $fraunces;
+    font-size: 24px;
+    line-height: 32px;
+    color: $darkgreyblue;
+    margin-bottom: 24px;
+    z-index: -1;
+  }
+  &__text {
+    @include text-style;
+    color: $darkgreyblue;
+  }
+}
