@@ -2,20 +2,21 @@
   background-image: url(../../imgs/collection-bg.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position-x: 0;
-  background-position-y: -28px;
+  background-position: center top;
   margin-bottom: 190px;
-  &__list {
-    @include flex;
-    justify-content: space-between;
-    padding: 0 72px;
-  }
 }
 .collections {
+  @include flex;
+  justify-content: space-between;
+  max-width: 1110px;
+  margin: 0 auto;
+  &__info {
+    text-align: center;
+  }
+
   &__item {
     max-width: 255px;
     height: auto;
-    text-align: center;
     display: inline-block;
     margin-top: 126px;
   }
@@ -28,10 +29,44 @@
     line-height: 32px;
     color: $darkgreyblue;
     margin-bottom: 24px;
-    z-index: -1;
   }
   &__text {
     @include text-style;
     color: $darkgreyblue;
+  }
+}
+@media only screen and (max-width: 1078px) {
+  .collections {
+    max-width: 100%;
+    flex-direction: column;
+    padding-top: 59px;
+  }
+  .collections__item {
+    @include flex;
+    max-width: 573px;
+    text-align: start;
+    margin-top: 0;
+  }
+  .collections__img {
+  }
+}
+@media only screen and (max-width: 488px) {
+  .collections {
+    max-width: 282px;
+    padding-top: 59px;
+    margin-bottom: 120px;
+  }
+  .collections__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 282px;
+    text-align: start;
+    margin-bottom: 48px;
+  }
+  .collections__img {
+    margin-bottom: 28px;
+  }
+  .collections__title {
+    margin-bottom: 16px;
   }
 }
