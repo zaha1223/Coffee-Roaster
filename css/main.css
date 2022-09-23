@@ -258,7 +258,7 @@ body {
   .hero {
     background-image: url(../../imgs/hero-bg-tablet.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     padding: 104px 309px 158px 51px;
     margin-bottom: 144px;
   }
