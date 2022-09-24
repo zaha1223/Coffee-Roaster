@@ -846,6 +846,11 @@ body {
     margin: 79px auto 120px 81px;
   }
 }
+.site-footer {
+  background-color: #2c343e;
+  padding: 47px 0;
+}
+
 .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -854,8 +859,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   vertical-align: middle;
-  background-color: #2c343e;
-  padding: 47px 0;
 }
 
 .footer-content__img {

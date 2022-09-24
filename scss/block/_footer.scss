@@ -1,8 +1,10 @@
+.site-footer {
+  background-color: $darkgreyblue;
+  padding: 47px 0;
+}
 .footer-content {
   @include flex;
   vertical-align: middle;
-  background-color: $darkgreyblue;
-  padding: 47px 0;
 }
 .footer-content__img {
   max-width: 236px;
@@ -61,7 +63,6 @@
     margin-left: 0;
   }
 }
-
 @media screen and (max-width: 368px) {
   .pages {
     display: flex;
