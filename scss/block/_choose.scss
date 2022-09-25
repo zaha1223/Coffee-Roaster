@@ -2,71 +2,69 @@
   background-color: $darkgreyblue;
   position: relative;
   border-radius: 10px;
-}
-.choose__info {
-  text-align: center;
-  padding: 100px 0 317px 0;
-  max-width: 540px;
-  margin: 0 auto;
-}
-.choose__title {
-  font-family: $fraunces;
-  color: $lightcream;
-  font-size: 40px;
-  line-height: 48px;
-  margin-bottom: 32px;
-}
-.choose__text {
-  @include text-style;
-  mix-blend-mode: normal;
-  opacity: 0.8;
-  color: $lightcream;
-}
-.choose__list {
-  @include flex;
-  max-width: 1110px;
-  margin: 0 auto;
-  position: absolute;
-  top: 342px;
-  right: 118px;
-}
-.choose__item {
-  max-width: 350px;
-  height: auto;
-  background-color: $maincolor;
-  text-align: center;
-  padding: 200px 48px 48px 48px;
-  border-radius: 8px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: calc(50% - 75px);
-}
-.choose__item:nth-child(1) {
-  background-image: url(../../imgs/quality.png);
-}
-
-.choose__item:nth-child(2) {
-  background-image: url(../../imgs/benefits.png);
-}
-.choose__item:nth-child(3) {
-  background-image: url(../../imgs/free-shipping.png);
-  background-size: 72px 50px;
-}
-.choose__item + .choose__item {
-  margin-left: 30px;
-}
-
-.choose__subtitle {
-  font-family: $fraunces;
-  font-size: 24px;
-  line-height: 32px;
-  color: $lightcream;
-  margin-bottom: 24px;
-}
-.choose__subtext {
-  color: $lightcream;
-  max-width: 255px;
-  margin: 0 auto;
+  &__info {
+    text-align: center;
+    padding: 100px 0 317px 0;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-family: $fraunces;
+    color: $lightcream;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 32px;
+  }
+  &__text {
+    @include text-style;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    color: $lightcream;
+  }
+  &__list {
+    @include flex;
+    max-width: 1110px;
+    margin: 0 auto;
+    position: absolute;
+    top: 342px;
+    right: 118px;
+  }
+  &__item {
+    max-width: 350px;
+    height: auto;
+    background-color: $maincolor;
+    text-align: center;
+    padding: 200px 48px 48px 48px;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: calc(50% - 75px);
+  }
+  &__item:nth-child(1) {
+    background-image: url(../../imgs/quality.png);
+  }
+  &__item:nth-child(2) {
+    background-image: url(../../imgs/benefits.png);
+  }
+  &__item:nth-child(3) {
+    background-image: url(../../imgs/free-shipping.png);
+    background-size: 72px 50px;
+  }
+  &__item + &__item {
+    margin-left: 30px;
+  }
+  &__subtitle {
+    font-family: $fraunces;
+    font-size: 24px;
+    line-height: 32px;
+    color: $lightcream;
+    margin-bottom: 24px;
+  }
+  &__subtext {
+    color: $lightcream;
+    max-width: 255px;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 1137px) {
   .choose {

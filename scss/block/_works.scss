@@ -1,72 +1,71 @@
 .works {
   margin-top: 351px;
+  &__title {
+    font-family: $fraunces;
+    font-size: 24px;
+    line-height: 32px;
+    color: $grey;
+    margin-bottom: 80px;
+  }
+  &__spans {
+    width: 760px;
+    height: 2px;
+    background-color: #fdd6ba;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 67px;
+  }
+  &__oval {
+    width: 31px;
+    height: 31px;
+    display: inline-block;
+    background-color: $lightcream;
+    border-radius: 50%;
+    border: 2px solid #0e8784;
+  }
+  &__link {
+    @include links;
+    font-family: $fraunces;
+    margin-top: 64px;
+    margin-bottom: 200px;
+    transition: background 0.4s ease;
+  }
+  &__link:hover {
+    background-color: $hovercolor;
+  }
+  &__link:active {
+    background-color: $lightgrey;
+  }
 }
-.works__title {
-  font-family: $fraunces;
-  font-size: 24px;
-  line-height: 32px;
-  color: $grey;
-  margin-bottom: 80px;
-}
-.works__spans {
-  width: 760px;
-  height: 2px;
-  background-color: #fdd6ba;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 67px;
-}
-.works__oval {
-  width: 31px;
-  height: 31px;
-  display: inline-block;
-  background-color: $lightcream;
-  border-radius: 50%;
-  border: 2px solid #0e8784;
-}
-
 .steps {
   max-width: 1045px;
   @include flex;
-}
-.steps__item {
-  max-width: 285px;
-}
-.steps__item:not(:last-child) {
-  margin-right: 95px;
-}
-.steps__number {
-  font-family: $fraunces;
-  font-size: 72px;
-  line-height: 72px;
-  color: $itemhover;
-  margin-bottom: 38px;
-}
-.steps__subtitle {
-  max-width: 255px;
-  font-family: $fraunces;
-  font-size: 32px;
-  line-height: 36px;
-  color: $darkgreyblue;
-  margin-bottom: 42px;
-}
-.steps__text {
-  @include text-style;
-  color: $darkgreyblue;
-}
-.works__link {
-  @include links;
-  font-family: $fraunces;
-  margin-top: 64px;
-  margin-bottom: 200px;
-  transition: background 0.4s ease;
-}
-.works__link:hover {
-  background-color: $hovercolor;
-}
-.works__link:active {
-  background-color: $lightgrey;
+  &__item {
+    max-width: 285px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 95px;
+  }
+  &__number {
+    font-family: $fraunces;
+    font-size: 72px;
+    line-height: 72px;
+    color: $itemhover;
+    margin-bottom: 38px;
+  }
+  &__subtitle {
+    max-width: 255px;
+    font-family: $fraunces;
+    font-size: 32px;
+    line-height: 36px;
+    color: $darkgreyblue;
+    margin-bottom: 42px;
+  }
+  &__text {
+    @include text-style;
+    color: $darkgreyblue;
+  }
 }
 @media screen and (max-width: 1137px) {
   .works {
