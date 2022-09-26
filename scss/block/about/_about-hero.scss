@@ -1,0 +1,80 @@
+.about-us {
+  background-image: url(../../../imgs/aboutus_hero.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 137px 750px 151px 85px;
+  margin-bottom: 168px;
+  &__title {
+    font-family: $fraunces;
+    font-size: 40px;
+    line-height: 48px;
+    color: $lightcream;
+    margin-bottom: 24px;
+  }
+  &__text {
+    max-width: 445px;
+    @include text-style;
+    color: $lightcream;
+  }
+}
+@media screen and (max-width: 1163px) {
+  .about-us {
+    padding: 118px 233px 118px 58px;
+  }
+}
+@media screen and (max-width: 905px) {
+  .about-us {
+    padding: 63px 233px 84px 54px;
+  }
+}
+@media screen and (max-width: 905px) {
+  .about-us {
+    background-image: url(../../../imgs/about-hero-bg-tablet.jpg);
+    background-repeat: no-repeat;
+    padding: 118px 233px 124px 58px;
+    margin-bottom: 144px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-us {
+    padding: 118px 157px 72px 58px;
+  }
+  .about-us__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 628px) {
+  .about-us {
+    padding: 118px 85px 30px 58px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .about-us {
+    padding: 53px 73px 43px 58px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .about-us {
+    background-image: url(../../../imgs/about-hero-bg-mobile.jpg);
+    padding: 166px 24px 213px 24px;
+    text-align: center;
+  }
+  .about-us__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .about-us__text {
+    font-size: 15px;
+    line-height: 25px;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    max-width: 279px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  .about-us {
+    padding: 111px 24px 146px 24px;
+  }
+}
