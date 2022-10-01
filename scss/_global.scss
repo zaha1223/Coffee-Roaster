@@ -35,11 +35,17 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 body {
   font-family: "Barlow", sans-serif;
-
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: $lightcream;
 }
+
 .container {
   max-width: 1320px;
   width: 100%;
